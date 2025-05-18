@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+	<head>
+
+		<title>Search Results | Webfactory Support</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+						<link rel="apple-touch-icon" sizes="180x180" href="https://s3.eu-west-1.amazonaws.com/cdn.webfactore.co.uk/e089136a-4239-4f53-b784-a2240944f2d0.png?t=1738245248">
+				<link rel="icon" type="image/png" sizes="32x32" href="https://s3.eu-west-1.amazonaws.com/cdn.webfactore.co.uk/e089136a-4239-4f53-b784-a2240944f2d0.png?t=1738245248">
+				<link rel="icon" type="image/png" sizes="16x16" href="https://s3.eu-west-1.amazonaws.com/cdn.webfactore.co.uk/e089136a-4239-4f53-b784-a2240944f2d0.png?t=1738245248">
+				
+
+        
+		<link rel="canonical" href="search-results.htm" />
+
+        
+
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		
+		<link rel="stylesheet" media="screen" href="libraries/font-awesome-6/css/all.min.css">
+
+
+		<link rel="stylesheet" media="screen" href="templates/css/compiled-styles.css">
+		<link rel="stylesheet" media="screen"  href="templates/css/compiled-styles_2.css">
+
+	
+
+        
+		<link media="screen"  href="https://fonts.googleapis.com/css?family=Poppins:400,500&amp;display=swap" rel="stylesheet" type="text/css">
+		
+        <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script async src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script async src="libraries/lightbox2/dist/js/lightbox.min.js"></script>
+
+
+        <script>
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            $(window).on("load",function() {
+
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top + 'px'
+                    }, 1000, 'swing');
+                }
+
+            });
+
+			$(document).on("submit", ".search-form", function(){
+				var search = $(this).find("input[name='search']").val();
+				search = search.replace("?","");
+				$(this).find("input[name='search']").val(search);
+			});
+
+
+        </script>
+
+
+        <script>
+    $.post("/site/actions/stats-record", {z: Math.round(window.devicePixelRatio * 100), u: '', r: 'https://support.webfactory.co.uk/', s: '13772',c: 'https://support.webfactory.co.uk/search-results', p: 'Search Results'});
+</script>
+ 
+
+	</head>
+
+	
+	<body class="bg-body page8 h-100 knowledgebase" data-bs-theme="light">
+
+<!-- Header / Nav -->
+<nav class="navbar navbar-expand-lg navbar-light border-bottom py-3 sticky-top bg-body" aria-label="Main navigation">
+	<div class="container-lg">
+
+		<div class="d-flex align-items-center gap-1">
+
+								<a class="navbar-brand me-0" aria-label="Return home" href="https://support.webfactory.co.uk/support_webfactory_co_default.html">
+						<img class="d-none d-lg-block" height="28" src="https://s3.eu-west-1.amazonaws.com/cdn.webfactore.co.uk/2cd59f34-d624-4480-87ec-cd3c94e0df29.png?t=1737019957" alt="Webfactory Support" />
+					</a>
+										<a class="navbar-brand me-0" href="https://support.webfactory.co.uk/support_webfactory_co_default.html">
+						<img class="d-lg-none" height="28" src="https://s3.eu-west-1.amazonaws.com/cdn.webfactore.co.uk/b32bad1d-a0a8-4c32-8faa-190c656cfb87.png?t=1731065105" alt="Webfactory Support" />
+					</a>
+					
+			<div class="vr mx-2"></div>
+
+			<!-- Product / system name -->
+			<a class="text-decoration-none" href="https://support.webfactory.co.uk/support_webfactory_co_default.html">
+				<h1 class="mb-0 text-muted fs-6 fw-normal">Webfactory Support</h1>
+			</a>
+
+		</div>
+
+		<!-- Navbar toggle -->
+		<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearchDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa-regular fa-magnifying-glass"></i>
+		</button>
+
+		<div class="collapse navbar-collapse flex-grow-0 col-3" id="navbarSearchDropdown">
+			<form class="input-group mt-3 mt-lg-0 search-form" role="search" action="https://support.webfactory.co.uk/search-results.htm" method="get">
+				<input class="form-control" type="text" name="search" value="" placeholder="Search" aria-label="Search">
+				<button class="btn btn-primary" type="submit" aria-label="Search">
+					<i class="fa-regular fa-magnifying-glass d-none d-lg-block"></i><span class="d-lg-none">Search</span>
+				</button>
+			</form>
+		</div>
+
+	</div>
+
+</nav>
+
+
+<!-- Main Content -->
+<main class="py-5">
+	
+<section>
+
+    <div class="container-lg">
+
+        <div class="mb-4">
+            <h2 class="mb-0 ">Search</h2>
+        </div>
+
+
+        
+
+        <h4 class="mb-3">Showing results for the search term "".</h4>
+
+        
+            <div class="rounded border text-center p-4">
+                <div class="px-3 py-5">
+                    <img class="img-fluid mb-3" src="https://s3.eu-west-1.amazonaws.com/cdn.webfactore.co.uk/14-hub-empty-articles.png" alt="Add article" width="140">
+                    <h5 class="mb-0">No results found for "<span class="half-highlight">"</span>.</h5>
+                </div>
+            </div>
+
+        
+
+
+    </div>
+
+</section></main>
+
+
+        <!-- Footer -->
+        <footer class="text-body-secondary py-5">
+            <div class="container-lg">
+
+
+                                    <section class="py-4 border-top">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 col-xl-3">
+                                <h3 class="mb-4 mb-md-0 fs-4">Can't find what you're looking for?</h3>
+                            </div>
+                            <div class="col-md-8 col-xl-9">
+                                <div class="d-flex flex-column flex-sm-row justify-content-md-end gap-sm-5 gap-4">
+
+                                                                            <div>
+                                            <h5 class="fs-6">Call us</h5>
+                                            <p class="mb-0"><i class="fa-regular fa-phone me-2"></i>02920 090190</p>
+                                        </div>
+                                    
+                                                                            <div>
+                                            <h5 class="fs-6">Email us</h5>
+                                            <p class="mb-0"><a class="text-decoration-none" href="mailto:hello@webfactory.co.uk"><i class="fa-regular fa-envelope me-2"></i>hello@webfactory.co.uk</a></p>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </section>
+                                                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 border-top pt-3">
+                    
+                    <p class="mb-0 text-muted fs-6">© 2025 Knowledgebase by <a href="https://support.webfactory.co.uk/www_webfactory_co_default.html" class="text-decoration-none">Webfactory</a></p>
+                    <p class="mb-0 fs-6"><a href="https://support.webfactory.co.uk/search-results.htm#">Back to top</a></p>
+                </div>
+
+            </div>
+        </footer>
+
+
+        <!-- Support 12 -->
+        <!-- 45215255136 -->
+
+    </body>
+</html>
+
